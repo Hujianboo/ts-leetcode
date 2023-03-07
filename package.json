@@ -1,0 +1,23 @@
+{
+  "name": "ts-leetcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register 'src/**/*.test.ts'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@types/expect.js": "^0.3.29",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.14.6",
+    "expect.js": "^0.3.1",
+    "mocha": "^10.2.0"
+  }
+}
