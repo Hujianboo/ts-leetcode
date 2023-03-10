@@ -8,6 +8,25 @@ export class TreeNode {
     this.right = right === undefined ? null : right;
   }
 }
+
+export class ListNode {
+  val: number | string;
+  next: ListNode | null;
+  constructor(val?: number | string, next?: ListNode | null) {
+    this.val = val === undefined ? 0 : val;
+    this.next = next === undefined ? null : next;
+  }
+}
+
+export const createList = (arr: Array<number | string>) => {
+  const dummy = new ListNode();
+  let current = dummy;
+  arr.forEach((item, index) => {
+    current.next = new ListNode(item);
+    current = current.next;
+  });
+  return dummy.next;
+};
 export const createTree = (arr: Array<number | null>) => {
   let queue = new Array<TreeNode>();
   let index = 0;
@@ -34,6 +53,3 @@ export const createTree = (arr: Array<number | null>) => {
   }
   return root;
 };
-let testArr = [1, 2, 5, 3, 4, null, 6];
-let tree = createTree(testArr);
-console.log(tree);
