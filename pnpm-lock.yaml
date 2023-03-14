@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@datastructures-js/priority-queue': ^6.2.0
   '@types/expect.js': ^0.3.29
   '@types/mocha': ^10.0.1
   '@types/node': ^18.14.6
@@ -10,6 +11,7 @@ specifiers:
   typescript: ^4.9.5
 
 dependencies:
+  '@datastructures-js/priority-queue': 6.2.0
   ts-node: 10.9.1_alpjt73dvgv6kni625hu7f2l4m
   typescript: 4.9.5
 
@@ -27,6 +29,16 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
+    dev: false
+
+  /@datastructures-js/heap/4.3.1:
+    resolution: {integrity: sha512-au4fYa4fprREES58FnMOTFjg8lCYpSenF5tBu8C/iweMaj02rAOZUqlLUCqR3HIWzNfgTeCmAiyRHdjJVHrsIQ==}
+    dev: false
+
+  /@datastructures-js/priority-queue/6.2.0:
+    resolution: {integrity: sha512-z4Nikrb3PqlYn1+2bF+LArm2kWC5kvm13E1h+HYm0exGuUEp2Av0S31tDG+h8hVIbg+FlJIzWiF/T38XIexs5w==}
+    dependencies:
+      '@datastructures-js/heap': 4.3.1
     dev: false
 
   /@jridgewell/resolve-uri/3.1.0:

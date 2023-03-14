@@ -17,7 +17,7 @@ describe("valid_parentheses", () => {
     expect(result).eql(false);
   });
   it("一样多", () => {
-    let str = "([((())))])";
+    let str = "([((())))";
     let result = isValid(str);
     expect(result).eql(false);
   });
